@@ -1,0 +1,5 @@
+package io.alka.springBoot.demo;
+
+public class DemoController {
+
+}

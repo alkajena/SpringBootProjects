@@ -1,0 +1,6 @@
+package io.alka.springBoot.Topic;
+
+@service
+public class TopicService {
+
+}

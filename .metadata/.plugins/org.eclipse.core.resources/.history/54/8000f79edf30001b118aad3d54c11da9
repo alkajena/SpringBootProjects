@@ -1,0 +1,6 @@
+package io.alka.springBoot.Topic;
+
+@RestController
+public class TopicController {
+
+}

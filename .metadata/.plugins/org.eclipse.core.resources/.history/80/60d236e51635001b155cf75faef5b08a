@@ -1,0 +1,41 @@
+package com.alka.topic;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class TopicService {
+	
+	@Autowired
+	TopicRepository topicRepo;
+
+	public List<Topic> getTopics() {
+		List<Topic> topics=new ArrayList<>();
+		for(Topic itr:topicRepo.findAll()) {
+			topics.add(itr);
+		}
+		return topics;
+	}
+
+	public Optional<Topic> getTopicsById(String id) {
+		/*List<String> topics1=new ArrayList<>();
+		topics1.add(id);
+		Iterable<String> itr=(Iterable<String>) topics1.iterator();
+		Iterable<Topic> topic=topicRepo.findAllById(itr);
+		for(Topic itr1:topic) {
+			return itr1;
+		}*/
+	return topicRepo.findById(id.toString());
+	}
+
+	public void createTopic(Topic topic) {
+		
+		topicRepo.save(topic);
+	}
+
+}

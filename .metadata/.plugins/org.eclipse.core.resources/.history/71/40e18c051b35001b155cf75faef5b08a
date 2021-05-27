@@ -1,0 +1,37 @@
+package com.alka.course;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import com.alka.topic.Topic;
+
+@Entity
+public class Course {
+
+	@Id
+	private String courseId;
+	private String name;
+	
+	private Topic topic;
+	
+	
+	public String getcourseId() {
+		return courseId;
+	}
+	public void setcourseId(String courseId) {
+		this.courseId = courseId;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Topic getTopic() {
+		return topic;
+	}
+	public void setTopic(Topic topic) {
+		this.topic = topic;
+	}
+	
+}

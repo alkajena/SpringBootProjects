@@ -1,0 +1,6 @@
+spring.datasource.url=Mysql@127.0.0.1:3306
+spring.datasource.username=root
+spring.datasource.password=
+spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.database-platform=org.hibernate.dialect.MySQL5InnoDBDialect
+spring.data.jpa.repositories.enabled=true

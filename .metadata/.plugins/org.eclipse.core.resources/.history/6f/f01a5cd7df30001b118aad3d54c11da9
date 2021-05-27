@@ -1,0 +1,16 @@
+package io.alka.springBoot.Topic;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class TopicController {
+	public static List<TopicEntity> list=new Arrayist<>();
+
+	@RequestMapping
+	public List<TopicEntity> getAllTopics(){
+		Lis
+	}
+}

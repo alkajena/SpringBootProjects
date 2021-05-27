@@ -1,0 +1,24 @@
+package com.example.topic;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class TopicService {
+	
+	@Autowired
+	TopicRepository topicRepo;
+
+	public List<Topic> getTopics() {
+		List<Topic> topics=new ArrayList<>();
+		for(Topic itr:topicRepo.findAll()) {
+			topics.add(itr);
+		}
+		
+	}
+
+}

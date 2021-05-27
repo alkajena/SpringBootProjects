@@ -1,0 +1,15 @@
+package com.example.topic;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class TopicService {
+
+	public List<Topic> getTopics() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,5 @@
+package io.alka.springBoot.Topic;
+
+public class TopicEntity {
+
+}

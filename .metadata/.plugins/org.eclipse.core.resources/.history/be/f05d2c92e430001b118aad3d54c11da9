@@ -1,0 +1,33 @@
+package io.alka.springBoot.Topic;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class TopicService {
+	public static List<TopicEntity> list=new ArrayList<>();
+	
+	public List<TopicEntity> getAllTopics(){
+		list.add(new TopicEntity(1, "Java"));
+		list.add(new TopicEntity(2, "Spring"));
+		return list;
+	}
+
+	public TopicEntity getTopic(Integer id) {
+		for(TopicEntity topic:list) {
+			if(topic.getId().equals(id)) {
+				return topic;
+			}
+		}
+		return null;
+	}
+
+	public void createTopic(TopicEntity topic) {
+		list.add(topic);
+		
+	}
+	
+
+}
